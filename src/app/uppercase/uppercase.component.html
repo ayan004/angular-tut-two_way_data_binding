@@ -1,0 +1,4 @@
+<!-- <p>uppercase works!</p> -->
+<input [(ngModel)]="employee.name" />{{ employee.name }} <br />
+<input [ngModel]="employee.name" (ngModelChange)="toUpper($event)" />
+{{ employee.name }}

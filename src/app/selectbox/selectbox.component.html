@@ -1,0 +1,10 @@
+<!-- <p>selectbox works!</p> -->
+
+<!--select  [value] ="myColor" (change)="myColor=$event.target.value" -->
+<select [(ngModel)]="myColor">
+  <option *ngFor="let color of cdColors" [value]="color">
+    {{ color }}
+  </option>
+</select>
+
+<p [style.color]="myColor">Hello World!</p>
